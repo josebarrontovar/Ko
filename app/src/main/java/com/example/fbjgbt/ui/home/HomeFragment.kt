@@ -28,16 +28,6 @@ class HomeFragment : Fragment() {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
-      /*
-        rv = root.findViewById(R.id.rv) as RecyclerView
-        rv.setHasFixedSize(true)
-        val llm = LinearLayoutManager(context)
-        rv.layoutManager = llm
-        initializeData();
-        initializeAdapter();
-
-        */
-
         rv = root.findViewById(R.id.rv) as RecyclerView
 
         val llm = LinearLayoutManager(context)
